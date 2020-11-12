@@ -1,0 +1,38 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+    nav button {display: none;}
+    nav ul.hide {display: block;}
+    nav ul {margin-left: 2%;}
+    nav ul li {
+        float: left;
+    }
+    nav ul li a {border: none;
+    border-right: 1px solid rgba(175, 175, 175, 0.3);
+    background-color: rgb(175, 175, 175);
+        color: #000;
+    padding: .8rem 1rem;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      flex: 50%;
+      width: 100%;
+      padding: 1px;
+    }
+    /*--- main ---*/
+      div.cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+      }
+      .social a img {width: 100%;}
+      .cards a img {width: 100%;}
+      .cards a {grid-column: 1 / span 3;}
+      .cards {grid-template-columns: 1fr 1fr;}
+      
+      footer {
+        background-color: rgb(175, 175, 175);
+        text-align: center;
+      }
+    } /*end medium */

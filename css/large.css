@@ -1,0 +1,49 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+    nav button {
+      display: none;
+    }
+  
+    nav ul.hide {
+      display: block;
+    }
+  
+    nav ul li a {
+      padding: .6rem 1rem;
+    }
+  
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  
+    div.cards {
+      display: grid;
+      width: 100%;
+      padding: 10px;
+    }
+  
+    /*--- main ---*/
+    div.cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+    }
+    .social,
+    .cards {
+      padding: .5rem 2vw;
+    }
+  
+    .social img,
+    .cards img {
+      width: 100%;
+    }
+  
+    footer {
+      background-color: rgb(175, 175, 175);
+      justify-self: center;
+    }
+  }
+  
+  /*end large */
