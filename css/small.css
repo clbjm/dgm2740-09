@@ -148,14 +148,6 @@ html {
     text-align: center;
   }
   
-  .column {
-    display: grid;
-    float: left;
-    width: 100%;
-    padding: 10px;
-    flex: 40%;
-    max-width: 70rem;
-  }
   
   /*----- Clearfix: Force an Element not to collapse -----*/
   .clearfix:after {
